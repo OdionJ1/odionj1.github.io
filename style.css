@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(209, 202, 202);
+    background: radial-gradient(circle, white, teal);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
