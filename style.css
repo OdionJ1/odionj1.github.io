@@ -1,0 +1,136 @@
+body{
+    background-color: rgb(209, 202, 202);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    position: fixed; 
+    margin-left: 370px; 
+    margin-top: 90px; 
+    background-color: #71b8c2; 
+    height: 430px; 
+    width: 600px;
+    border-radius: 10px;
+}
+
+.question{
+    background-color: teal;
+    border-radius: 5px;
+    width: 500px;
+    margin-left: 50px;
+    padding: 1px 0;
+}
+
+.question p{
+    font-size: 60px;
+}
+
+.instruction{
+    text-align: center;
+    font-style: italic;
+    color: #f84646;
+    font-size: 14px;
+}
+
+.options-container{
+    display: flex;
+    margin-left: 60px;
+    margin-top: 22px;
+}
+
+.option-box{
+    width: 15%;
+    height: 52px;
+    background-color: #ffffff;
+    margin-right: 45px;
+    text-align: center;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.option-box:hover{
+    border: 1.5px solid black;
+}
+
+/* .answer-container{
+    text-align: center;
+} */
+
+.start-container{
+    cursor: pointer;
+    background-color: teal;
+    text-align: center;
+    width: 20%;
+    height: 25px;
+    margin-left: 237px;
+    font-size: large;
+    margin-top: 40px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.start-container p{
+    margin-top: 3px;
+    font-size: 17px;
+    color: black;
+}
+
+.start-container p:hover{
+    color: floralwhite;
+}
+
+
+/* Media queries for phones */
+@media only screen and (max-width: 450px){
+    body{
+        background: radial-gradient(circle, white, teal)
+    }
+
+    .container{
+        margin-left: 5px;
+        width: 385px;
+        height: 700px;
+        margin-top: 20px;
+    }
+
+    .question{
+        width: 340px;
+        margin-left: 20px;
+    }
+
+    .instruction{
+        font-size: 18px;
+    }
+
+    .options-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 19px;
+    }
+
+    .option-box{
+        width: 40%;
+        height: 100px;
+        margin: 10px;
+        font-size: 25px;
+        border: 1px solid black;
+    }
+
+    .start-container{
+        width: 40%;
+        font-size: xx-large;
+        height: 55px;
+        margin-left: 110px;
+    }
+
+    .start-container p{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
