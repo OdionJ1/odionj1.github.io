@@ -90,7 +90,7 @@ body{
         margin-left: 5px;
         width: 335px;
         height: 570px;
-        margin-top: 20px;
+        margin-top: 14px;
     }
 
     .question{
@@ -104,7 +104,7 @@ body{
     }
 
     .instruction{
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .options-container{
