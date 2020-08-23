@@ -143,6 +143,7 @@ function start(){
         for(p=0; p<4; p++){
             document.getElementsByClassName('option')[p].innerHTML = p
             document.getElementsByClassName('option-box')[p].removeEventListener('click', next)
+            document.getElementsByClassName('option-box')[p].removeEventListener('click', increaseScore)
         }
 
         ran1.innerHTML = 1
