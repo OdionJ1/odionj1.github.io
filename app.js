@@ -118,6 +118,10 @@ function start(){
                     alert( 'Timer ran out',)
                     alert('Your score = '+score)
                 }
+                for(p=0; p<4; p++){
+                    document.getElementsByClassName('option-box')[p].removeEventListener('click', next)
+                    document.getElementsByClassName('option-box')[p].removeEventListener('click', increaseScore)
+                }
                 if(score > highestScore){
                     highestScore = score
                     document.querySelector('.highScore').innerHTML = highestScore
@@ -239,17 +243,18 @@ function next(){
         document.getElementsByClassName('wrong-answer')[t].addEventListener('click', next)
     }
 
-    document.getElementsByClassName('correct-answer')[0].addEventListener('click', increaseScore)
-    
+    document.getElementsByClassName('correct-answer')[0].addEventListener('click', increaseScore) 
 }
 
 
 
 function increaseScore(){
-    score = score + 10
-    document.querySelector('.score').innerHTML = score
-    console.log(score)
     next()
+    setTimeout(function(){
+        score = score + 10
+        document.querySelector('.score').innerHTML = score
+        console.log(score)
+    },1000)
 }
 
 

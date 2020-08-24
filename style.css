@@ -7,8 +7,8 @@
 body{
     background: radial-gradient(circle, white, teal);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 100vw;
-    height: 100vh;
+    width: 99vw;
+    height: 87vh;
 }
 
 .container{
@@ -52,7 +52,6 @@ body{
     height: 4em;
     background-color: #ffffff;
     margin: auto;
-    /* margin-right: 45px; */
     text-align: center;
     font-style: italic;
     cursor: pointer;
@@ -70,9 +69,8 @@ body{
     text-align: center;
     width: 20%;
     height: 27px;
-    margin-left: 237px;
+    margin: 2em auto;
     font-size: large;
-    margin-top: 40px;
     border-radius: 3px;
     border: 1px solid black;
 }
@@ -89,7 +87,7 @@ body{
 
 
 /* Media queries for phones */
-@media only screen and (max-width: 350px){
+/* @media only screen and (height: 570px){
     .container{
         width: 90%;
         height: 90%;
@@ -107,7 +105,6 @@ body{
     }
 
     .options-container{
-        /* padding: 1em; */
         display: grid;
         grid-gap: 1em;
         grid-template-columns: 1fr 1fr;
@@ -137,12 +134,12 @@ body{
         font-size: 22px;
         margin-top: 6px;
     }
-}
+} */
 
 
 
 
-@media only screen and (min-width: 351px){
+@media only screen and (max-width: 1200px){
     body{
         background: radial-gradient(circle, white, teal)
     }
