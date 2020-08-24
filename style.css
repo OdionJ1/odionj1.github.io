@@ -62,9 +62,7 @@ body{
     border: 1.5px solid black;
 }
 
-/* .answer-container{
-    text-align: center;
-} */
+
 
 .start-container{
     cursor: pointer;
@@ -151,7 +149,7 @@ body{
 
     .container{
         width: 90%;
-        height: 87%;
+        height: 590px;
         margin: 2.3em auto;
     }
 
