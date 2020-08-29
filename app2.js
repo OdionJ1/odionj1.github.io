@@ -62,20 +62,17 @@ function start(){
 
         for(i=0; i<3; i++){
             let wrong = Math.floor(Math.random() * correctAnswer)+5;
-
+    
             //Loop to check if ${wrong} already exists in the options array. if it does, then it'll random again
-            for(j=0; j<options.length; j++){
-                function check(){
+            function check(){
+                for(j=0; j<options.length; j++){
                     if(options[j] === wrong || wrong === correctAnswer){
                         wrong = Math.floor(Math.random() * correctAnswer)+5;
+                        check()
                     } 
                 }
-
-                if(options[j] === wrong || wrong === correctAnswer){
-                    wrong = Math.floor(Math.random() * correctAnswer)+5;
-                    check()
-                }
             }//
+            check()
             options.push(wrong);
         }
 
@@ -236,20 +233,20 @@ function division(){
     let remainer = num1 % num2;
 
     let correctAnswer = num1 / num2
-    let check = () =>{
+    let check4 = () =>{
         if(remainer > 0 || num1 === num2 || correctAnswer === 2){
             num1 = Math.floor(Math.random()* 70)+2;
             num2 = Math.floor(Math.random()* num1)+2;
             remainer = num1 % num2;
             correctAnswer = num1 / num2
-            check()
+            check4()
         } else {
             ran1.innerHTML = num1
             ran2.innerHTML = num2
         }
     }
 
-    check()
+    check4()
 
     options.push(correctAnswer)
 
@@ -257,18 +254,15 @@ function division(){
         let wrong = Math.floor(Math.random() * correctAnswer)+5;
 
         //Loop to check if ${wrong} already exists in the options array. if it does, then it'll random again
-        for(j=0; j<options.length; j++){
-            function check(){
+        function check(){
+            for(j=0; j<options.length; j++){
                 if(options[j] === wrong || wrong === correctAnswer){
                     wrong = Math.floor(Math.random() * correctAnswer)+5;
+                    check()
                 } 
             }
-
-            if(options[j] === wrong || wrong === correctAnswer){
-                wrong = Math.floor(Math.random() * correctAnswer)+5;
-                check()
-            }
         }//
+        check()
         options.push(wrong);
     }
 
@@ -321,7 +315,7 @@ function division(){
 function substraction(){
     arithmetic.innerHTML= '-';
 
-    let num1 = Math.floor(Math.random() * 49)+2
+    let num1 = Math.floor(Math.random() * 49)+3
     let num0 = num1 - 3
     let num2 = Math.floor(Math.random() * num0)
     
@@ -337,18 +331,15 @@ function substraction(){
         let wrong = Math.floor(Math.random() * correctAnswer)+5;
 
         //Loop to check if ${wrong} already exists in the options array. if it does, then it'll random again
-        for(j=0; j<options.length; j++){
-            function check(){
+        function check(){
+            for(j=0; j<options.length; j++){
                 if(options[j] === wrong || wrong === correctAnswer){
                     wrong = Math.floor(Math.random() * correctAnswer)+5;
+                    check()
                 } 
             }
-
-            if(options[j] === wrong || wrong === correctAnswer){
-                wrong = Math.floor(Math.random() * correctAnswer)+5;
-                check()
-            }
         }//
+        check()
         options.push(wrong);
     }
 
