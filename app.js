@@ -18,6 +18,7 @@ timer.innerHTML = time;
 let countDown;
 let randomNumber;
 
+
 arithmetic.innerHTML = 'x'
 
 function start(){
