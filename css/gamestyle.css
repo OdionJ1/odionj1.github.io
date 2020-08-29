@@ -43,7 +43,7 @@ body{
     width: 80%;
     border-radius: 10px;
     box-shadow: 0 9px #999;
-    background: teal
+    background: radial-gradient(circle, white, teal);
 }
 
 .selection:active{
@@ -52,7 +52,7 @@ body{
 }
 
 .selection p{
-    padding: 60px;
+    padding: 45px;
     font-size: 30px;
 }
 
