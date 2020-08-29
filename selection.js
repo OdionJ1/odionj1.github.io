@@ -1,20 +1,3 @@
-//Set selection choice
-let container0 = document.querySelector('.selection-container');
-let selectionA = document.querySelector('.selectionA');
-let mandA = document.querySelector('.m-and-a-questions');
-
-
-let changePage = () => {
-    container0.hidden = true;
-
-    mandA.hidden = false;
-}
-
-selectionA.addEventListener('click', changePage)
-
-
-
-
 //Change selection option inner html every 1sec
 let selectionAInner = document.querySelector('.selectionA p');
 let selectionBInner = document.querySelector('.selectionB p');
