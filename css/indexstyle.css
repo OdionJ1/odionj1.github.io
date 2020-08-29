@@ -57,6 +57,14 @@ input{
     outline-color: black;
 }
 
+.signature{
+    margin-top: 40px; 
+    font-size:10px; 
+    font-style:italic;
+    text-align: left;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 
 
 
@@ -95,6 +103,10 @@ input{
         height: 7%;
         margin: 1em auto;
         text-align: center;
+    }
+    
+    .signature{
+        margin-top: 150px; 
     }
     
     
