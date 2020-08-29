@@ -20,7 +20,7 @@ let selectionAInner = document.querySelector('.selectionA p');
 let selectionBInner = document.querySelector('.selectionB p');
 
 
-let arr = ['x and +', '3 X 2', '2 + 2'];
+let arr = ['x and +', '3 x 2', '2 + 2'];
 let arr2 = ['/ and -', '9 / 3', '5 - 2']
 
 
