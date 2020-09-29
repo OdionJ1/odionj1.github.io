@@ -4,6 +4,8 @@ let ran1 = document.querySelector('.ran1');
 let ran2 = document.querySelector('.ran2');
 let arithmetic = document.querySelector('.arithmetic');
 
+let scoreAnimation = document.querySelector('.score');
+
 let options = [];
 let choices = [];
 
@@ -170,7 +172,6 @@ startButton.addEventListener('click', start);
 
 
 
-
 function next(){
     for(s=0; s<4; s++){
         document.getElementsByClassName('option-box')[s].removeEventListener('click', next)
@@ -188,14 +189,19 @@ function next(){
     let ranArr = Math.floor(Math.random() * arr.length)
 
     arr[ranArr]()
+
 }
 
 
 
 function increaseScore(){
     next()
+    scoreAnimation.innerHTML = '10+'
+    scoreAnimation.classList.add('result1')
     setTimeout(function(){
         score = score + 10
+        scoreAnimation.classList.remove('result1')
+        scoreAnimation.innerHTML = ''
         document.querySelector('.score').innerHTML = score
         console.log(score)
     },900)
